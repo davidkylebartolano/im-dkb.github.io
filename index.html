@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>David Kyle Bartolano - Portfolio</title>
+  <style>
+    :root{
+      --grad1:#f9d423;
+      --grad2:#ff4e50;
+      --accent:#ff6a00;
+      --card: rgba(255,255,255,.88);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, var(--grad1), var(--grad2));
+      color:#333;
+      text-align:center;
+      line-height:1.6;
+    }
+    header{
+      padding:32px 20px;
+      background: rgba(255,255,255,.7);
+      border-bottom:3px solid #fff;
+    }
+    header img{
+      width:140px;height:140px;border-radius:50%;
+      border:4px solid #fff;object-fit:cover;
+      box-shadow:0 4px 12px rgba(0,0,0,.2)
+    }
+    h1{margin:10px 0 4px;font-size:2.2rem}
+    .subtitle{margin:0;color:#555}
+    section{padding:34px 18px}
+    .card{
+      background:var(--card);
+      max-width:900px;margin:0 auto 22px;
+      padding:22px;border-radius:18px;
+      box-shadow:0 6px 14px rgba(0,0,0,.18);
+      text-align:left;
+    }
+    .card h2{
+      margin:4px 0 14px;
+      color:#c41274;
+      text-align:center;
+    }
+    .list{
+      list-style:none;margin:0;padding:0;
+    }
+    .list li{
+      padding:10px 14px;margin:6px 0;
+      background:#ff4e50;color:#fff;border-radius:10px;
+    }
+    .badges{
+      display:flex;flex-wrap:wrap;gap:10px;justify-content:center;
+    }
+    .badge{
+      background:#fff;border:2px solid var(--accent);color:#333;
+      padding:8px 12px;border-radius:999px;font-weight:600;
+    }
+    .edu{
+      display:grid;gap:10px;
+    }
+    .edu-item{
+      display:flex;gap:12px;align-items:flex-start;
+      background:#fff;border-left:6px solid #c41274;
+      border-radius:12px;padding:12px 14px;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,.04);
+    }
+    .edu-years{min-width:140px;font-weight:700;color:#c41274}
+    .gallery{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:14px;margin-top:10px;
+    }
+    .gallery img{
+      width:100%;height:280px;object-fit:cover;border-radius:14px;
+      border:4px solid #fff;box-shadow:0 4px 12px rgba(0,0,0,.18);
+    }
+    .contact a{color:#c41274;text-decoration:none;font-weight:700}
+    .contact a:hover{text-decoration:underline}
+    footer{
+      background:rgba(0,0,0,.75);color:#fff;padding:16px;margin-top:24px;
+      font-size:.92rem;
+    }
+    @media (max-width:520px){
+      header img{width:120px;height:120px}
+      .edu-years{min-width:110px}
+      .gallery img{height:220px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="9e1efb3f-59d6-44d6-8248-b7ce40e80545.jpg" alt="David Kyle Bartolano portrait">
+  <h1>David Kyle Bartolano</h1>
+  <p class="subtitle">Welcome to my colorful personal portfolio!</p>
+</header>
+
+<section id="about">
+  <div class="card">
+    <h2>About Me</h2>
+    <p style="text-align:center;max-width:760px;margin:0 auto;">
+      Hi! I’m David—an IT student who enjoys learning new skills, solving problems,
+      and working with others. I like keeping things simple, growing through practice,
+      and bringing positive energy on and off the court.
+    </p>
+  </div>
+</section>
+
+<section id="education">
+  <div class="card">
+    <h2>Education</h2>
+    <div class="edu">
+      <div class="edu-item">
+        <div class="edu-years">2010–2016</div>
+        <div class="edu-detail"><strong>E.T.C.S‑2</strong></div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-years">2016–2022</div>
+        <div class="edu-detail"><strong>NOHS</strong> — HS/SHS</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-years">2022–2026</div>
+        <div class="edu-detail"><strong>STI West Negros University</strong> — Bachelor of Science in Information Technology</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="card">
+    <h2>Work Experience</h2>
+    <ul class="list">
+      <li>Trapdor &amp; Resto Bar — Staff</li>
+      <li>Bogsbrew — Staff</li>
+    </ul>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="badges">
+      <span class="badge">Teamwork</span>
+      <span class="badge">Patience</span>
+      <span class="badge">Time Management</span>
+      <span class="badge">Communication</span>
+    </div>
+  </div>
+</section>
+
+<section id="hobbies">
+  <div class="card">
+    <h2>Hobbies &amp; Passion</h2>
+    <p style="text-align:center;">Playing basketball and staying active with friends and teammates.</p>
+    <div class="gallery">
+      <img src="Capturebb1.PNG" alt="Basketball portrait">
+      <img src="Capturebb.PNG" alt="Basketball team group photo">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card contact" style="text-align:center;">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:davidkylebartolano30@gmail.com">davidkylebartolano30@gmail.com</a></p>
+    <p>Website: <a href="https://im-dkb.github.io" target="_blank" rel="noopener">im-dkb.github.io</a></p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 David Kyle Bartolano — All Rights Reserved
+</footer>
+
+</body>
+</html>
